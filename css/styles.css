@@ -810,8 +810,13 @@ img {
   border-radius: 50%;
 }
 
-.close-black-icon {
-  fill: #212121;
+.icon-close {
+  transition: fill 250ms var(--cubic-bezier);
+}
+
+.modal-button:hover .icon-close,
+.modal-button:focus .icon-close {
+  fill: var(--accent-color);
 }
 
 .modal-title {
@@ -862,6 +867,14 @@ img {
   transition: fill var(--standard-animation);
 }
 
+.form-input:focus + .form-svg {
+  fill: var(--accent-color);
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
 .form-comment {
   position: relative;
   width: 100%;
@@ -905,12 +918,16 @@ img {
 
 .checkbox:checked + .icon {
   background-image: url(../images/icons/svg/icon-check.svg);
-  background-color: var(--accent-cl);
+  background-color: var(--accent-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border-color: var(--accent-cl);
+  border-color: var(--accent-color);
   background-origin: border-box;
+}
+
+.checkbox:focus-within + .icon {
+  border-color: var(--accent-color);
 }
 
 .submit-button {
