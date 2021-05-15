@@ -925,8 +925,8 @@ textarea:focus {
 
 .checkbox:checked + .icon {
   background-image: url(../images/icons/svg/icon-check.svg);
-  background-color: var(--accent-color);
   background-repeat: no-repeat;
+  background-color: var(--accent-color);
   background-position: center;
   background-size: contain;
   border-color: var(--accent-color);
