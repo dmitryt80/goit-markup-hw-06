@@ -881,7 +881,7 @@ img {
   transition: border var(--standard-animation);
 }
 
-.form-svg {
+.icon-form {
   fill: currentColor;
   position: absolute;
   display: block;
@@ -891,11 +891,7 @@ img {
   transition: fill var(--standard-animation);
 }
 
-.form-svg {
-  fill: var(--accent-color);
-}
-
-.form-input:focus {
+.icon-form:focus {
   fill: var(--accent-color);
 }
 
